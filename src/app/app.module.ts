@@ -3,10 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { FilterPipe } from './filter.pipe';
 import { NamePipe } from './name.pipe';
 
 @NgModule({
-  declarations: [AppComponent, NamePipe],
+  declarations: [AppComponent, NamePipe, FilterPipe],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

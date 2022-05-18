@@ -1,5 +1,11 @@
 <input [(ngModel)]="firstName" />
 <input [(ngModel)]="lastName" />
+<button (click)="addName(firstName)">Add Name</button>
 
 <!-- {{ getName() }} -->
+<br />
 {{ firstName | name: lastName }}
+<br />
+{{ names | filter: 5 }}
+<br />
+{{ names | json }}
