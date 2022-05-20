@@ -4,8 +4,8 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'name',
 })
 export class NamePipe implements PipeTransform {
-  transform(value: unknown, ...args: unknown[]): unknown {
+  transform(fname: string, lname: string): string {
     console.log('name pipe called');
-    return value + ' ' + args[0];
+    return fname + ' ' + lname;
   }
 }
